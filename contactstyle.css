@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'LT Glockenspiel';
+  src: url('fonts/LT Glockenspiel.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('fonts/PlayfairDisplay.ttf') format('truetype');
+}
+
+.headbox {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #644e51cc;
+  border-radius: 6px;
+  padding: 6px;
+  z-index: 1000;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hamburger {
+  font-size: 18px;
+  color: #f7c65d;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+/* Saat aktif, ikon ☰ diputar menghadap ke bawah */
+.hamburger.active {
+  transform: rotate(90deg);
+}
+
+/* Dropdown menu dengan animasi slide down */
+.dropdown {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  background-color: #644e51cc;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  flex-direction: column;
+  min-width: 100px;
+}
+
+.dropdown.show {
+  max-height: 200px;
+}
+
+.dropdown a {
+  display: block;
+  padding: 6px 12px;
+  color: #f7c65d;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: 'LT Glockenspiel';
+}
+
+.dropdown a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('images/background.png');
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+  background-attachment: fixed;  
+}
+
+.contact-section {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color:#644e51;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #f7c65d;
+  font-family: 'PlayfairDisplay';
+}
+
+.contact-section h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-family: 'LT Glockenspiel';
+}
+
+.contact-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.email-link {
+  color: 	#f7c65d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: #dc694a;
+  text-decoration: underline;
+}
+
+
+.social-icons {
+  display: flex;
+  gap: 12px;               /* Jarak antar ikon */
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.social-icons img {
+  width: 24px;             /* Ukuran kecil */
+  height: 24px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);   /* Efek membesar saat hover */
+}

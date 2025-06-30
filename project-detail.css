@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('fonts/PlayfairDisplay.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'LT Glockenspiel';
+  src: url('fonts/LT Glockenspiel.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('images/background.png');
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+  background-attachment: fixed;  
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #644e51;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #f7c65d;
+  font-family: 'LT Glockenspiel';
+  font-size: 70px;
+  margin-top: 1px;    
+  margin-bottom: 1px; 
+}
+
+.image-slider {
+  position: relative;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;         /* Hapus background merah */
+  border: none;             /* Hapus border */
+  color: white;             /* Warna ikon panah */
+  font-size: 30px;          /* Besarkan ikon jika perlu */
+  cursor: pointer;
+  user-select: none;
+  padding: 0;               /* Hapus padding agar tidak ada area besar */
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(139, 47, 47, 0.9);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.project-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #f7c65d;
+  font-family: 'PlayfairDisplay';
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.game-link a {
+  color: #2b2b2b;
+  text-decoration: none;
+  font-size: 24px;         /* Besarkan ukuran ikon */
+  margin-right: 10px;      /* Beri jarak antar ikon */
+  transition: color 0.3s ease;
+}
+
+.game-link a:hover {
+  color: #000000;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #b03a3a;
+  color: #f7c65d;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  font-family: 'LT Glockenspiel';
+}
+
+.back-button:hover {
+  background-color: #8b2f2f;
+}

@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'LT Glockenspiel';
+  src: url('fonts/LT Glockenspiel.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TikiTropic';
+  src: url('fonts/TikiTropic.ttf') format('truetype');
+}
+
+.headbox {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #644e51cc;
+  border-radius: 6px;
+  padding: 6px;
+  z-index: 1000;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hamburger {
+  font-size: 18px;
+  color: #f7c65d;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+/* Saat aktif, ikon ☰ diputar menghadap ke bawah */
+.hamburger.active {
+  transform: rotate(90deg);
+}
+
+/* Dropdown menu dengan animasi slide down */
+.dropdown {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  background-color: #644e51cc;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  flex-direction: column;
+  min-width: 100px;
+}
+
+.dropdown.show {
+  max-height: 200px;
+}
+
+.dropdown a {
+  display: block;
+  padding: 6px 12px;
+  color: #f7c65d;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: 'LT Glockenspiel';
+}
+
+.dropdown a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding-bottom: 70%;
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  color: 	#c14545;
+  font-family: 'LT Glockenspiel';
+}
+
+.profil {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #644e51;
+  margin-bottom: 10px;
+}
+
+.welcome{
+  font-size: 120%;
+  color:	#dc694a;
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 0.1%;
+   font-size: 300%;
+}
+
+.container p {
+  margin-top: 0;
+  padding-bottom: 1%;
+}
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Detail - Link Saver</title>
+  <link rel="stylesheet" href="project-detail.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Link Saver</h1>
+
+    <div class="image-slider">
+      <img src="images/link-saver_ss-1.png" class="slide active" alt="Link Saver Screenshot 1">
+      <img src="images/link-saver_ss-2.png" class="slide" alt="Link Saver Screenshot 2">
+      <img src="images/link-saver_ss-3.png" class="slide" alt="Link Saver Screenshot 3">
+
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <div class="project-description">
+        <p style="font-size: 30px;">
+            <strong>Category:</strong> App<br />
+            <strong>Created:</strong> 2025
+        </p>
+        <p>
+           Link Saver is an app I created to help me save links.  
+           The idea came from my situation at home where I don't have Wi-Fi to download things.  
+           So, when I'm at school, I take advantage of the school's Wi-Fi to download various files such as movies or games.  
+           With this app, I can prepare the download links at home and download them later at school.
+        </p>
+        <p> 
+           The way this app works is by saving links into a .txt file based on the selected category.  
+           The .txt file will be saved in the folder we have previously set as the path.  
+           Each category will generate its own file.
+        </p>
+ 
+    </div>
+  <a href="project.html" class="back-button">← Back to the list</a>
+</div>
+
+  <script src="features.js"></script>
+</body>
+</html>
